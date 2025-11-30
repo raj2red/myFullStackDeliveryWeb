@@ -10,7 +10,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardDescription }
 import { Product } from '@/types';
 import { useCart } from '@/context/CartContext';
 
-export default function MenuPage() {
+export default function AboutPage() {
     const [category, setCategory] = useState<Product['category'] | 'all'>('all');
     const { addItem } = useCart();
 
@@ -33,8 +33,8 @@ export default function MenuPage() {
     return (
         <div className="container mx-auto px-4 py-8">
             <div className="mb-8">
-                <h1 className="text-3xl font-bold mb-4">Our Menu</h1>
-                <p className="text-muted-foreground">Delicious, healthy options for every taste.</p>
+                <h1 className="text-3xl font-bold mb-4">About Us</h1>
+                <p className="text-muted-foreground">We are a team of passionate chefs and food enthusiasts who are dedicated to bringing you the best dining experience possible.</p>
             </div>
 
             {/* Filter Tabs */}
